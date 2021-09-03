@@ -41,6 +41,13 @@ def create_app(test_config=None):
     response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
     return response
   
+  @app.route('/')
+  def main():
+    return jsonify({
+      "working": True
+    })
+  
+  
   @app.route('/categories')
   def get_categories():
     data = Category.query.all()
