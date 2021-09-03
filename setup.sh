@@ -1,0 +1,1 @@
+psql trivia < trivia.psql
