@@ -44,7 +44,8 @@ def create_app(test_config=None):
   @app.route('/')
   def main():
     return jsonify({
-      "working": True
+      "working": True,
+      "endpoints": "GET /categories\nGET /questions\nPOST /questions, JSON: question, answer, category, difficulty (all string)\nPOST /questions/search, JSON: searchTerm(string)\nDELETE /questions/<QUESTION_ID>\nGET /categories/<CATEGORY_ID>/questions\nPOST /quizzes, JSON: quiz_category->{id:<CATEGORY_ID>}, previous_questions->[ARRAY of questions]"
     })
   
   
