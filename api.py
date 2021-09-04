@@ -254,7 +254,7 @@ def create_app(test_config=None):
   
   return app
 
-
+create_app()
 
 
 # end of the code...
