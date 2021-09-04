@@ -251,7 +251,8 @@ def create_app(test_config=None):
       'message': 'Sorry, the falut is us not you. Please try again later.'
     }), 500
   
-  
+  if __name__=='__main__':
+    app.run()
   return app
 
 create_app()
